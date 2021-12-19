@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ColorClock</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+		body {
+			margin: 0px;
+			color: white;
+			font-family: "Roboto";
+		}
+		.timebox {
+			position: absolute;
+			top: 0px;
+			width: 100%;
+			height: 50%;
+			background-color: black;
+			display: flex;
+  			justify-content: center;
+  			align-items: center;
+		}
+		.time {
+			font-size: 10vw;
+		}
+		.datebox{
+			position: absolute;
+			top: 50%;
+			width: 100%;
+			height: 50%;
+			background-color: black;
+			display: flex;
+  			justify-content: center;
+  			align-items: center;
+		}
+		.date {
+			font-size: 10vw;
+		}
+	</style>
+</head>
+<body onload="displayClock()">
+	<div class="timebox" id="timebox">
+		<p class="time" id="time"></p>
+	</div>
+	<div class="datebox" id="datebox">
+		<p class="date" id="date"></p>
+	</div>
+	<script src="clock.js"></script>
+</body>
+</html>
